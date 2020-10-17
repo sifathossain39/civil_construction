@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/flickity.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAV MENU START ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img class="logo-img" src="./images/logo.png" alt="">
+        </a>
+
+        <!-- Collapsable hamburger -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#smNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV items -->
+        <div class="collapse navbar-collapse" id="smNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item d-flex dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html">Services</a>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Construction</a>
+                    </div>
+                </li>
+                <li class="nav-item d-flex dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Projects</a>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Ongoing Projects</a>
+                        <a class="dropdown-item" href="#">Completed Projects</a>
+                    </div>
+                </li>
+                <li class="nav-item d-flex dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Company</a>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Mission & Vision</a>
+                        <a class="dropdown-item" href="#">Team</a>
+                        <a class="dropdown-item" href="#">Client</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- =========X======== NAV MENU END =======X========== -->
+
+    <!-- ================= SLIDER  START ================= -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item  active parallaxie" style='background: url("./images/slider_img_1.jpg")'>
+                <div class="black-overlay"></div>
+
+                <!-- CAPTIONS FOR 1ST SLIDE -->
+                <div class="carousel-caption d-block">
+                    <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Welcome To</h3>
+                    <h1 class="mx-auto">ABCD <span></span></h1>
+                    <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Bangladesh Construction Company
+                        Ltd.</h5>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="carousel-item parallaxie" style='background: url("./images/slider_img_2.jpg");'>
+                <div class="black-overlay"></div>
+
+                <!-- CAPTIONS FOR 1ST SLIDE -->
+                <div class="carousel-caption d-block">
+                    <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Welcome To</h3>
+                    <h1 class="mx-auto">ABCD <span></span></h1>
+                    <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Bangladesh Construction Company
+                        Ltd.</h5>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="carousel-item parallaxie" style='background: url("./images/slider_img_3.jpg")'>
+                <div class="black-overlay"></div>
+                <div class="carousel-caption d-block">
+
+                    <!-- CAPTIONS FOR 1ST SLIDE -->
+                    <h3 class="animate__animated animate__fadeInDown animate__delay-1s">Welcome To</h3>
+                    <h1 class="mx-auto">ABCD <span></span></h1>
+                    <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Bangladesh Construction Company
+                        Ltd.</h5>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+        </div>
+        <!-- ARROW BUTTON TO SLIDE  -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- =========X======== SLIDER END =======X========== -->
+
+    <!-- ================= CARD SECTION ================= -->
+
+    <div id="card-section" class="container js-card-scetion">
+        <div class="row justify-content-center">
+
+            <!-- SERVICES -->
+            <div class="col-lg-3">
+                <div class="card" onclick="location.href='services.html';" data-aos="fade-up" data-aos-duration="300">
+                    <div class="face face1">
+                        <div class="content">
+                            <span><i class="fas fa-cogs"></i></span>
+                            <h3>Services</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fuga debitis dolores id
+                                temporibus hic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONSTRUCTION -->
+            <div class="col-lg-3">
+                <div class="card" onclick="location.href='services.html';" data-aos="fade-up" data-aos-duration="600">
+                    <div class="face face1">
+                        <div class="content">
+                            <span><i class="ml-3 fas fa-cogs"></i></span>
+                            <h3>Construction</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fuga debitis dolores id
+                                temporibus hic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOIL TEST -->
+            <div class="col-lg-3">
+                <div class="card" onclick="location.href='services.html';" data-aos="fade-up" data-aos-duration="900">
+                    <div class="face face1">
+                        <div class="content">
+                            <span><i class="fas fa-cogs"></i></span>
+                            <h3>Soil Test</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fuga debitis dolores id
+                                temporibus hic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESIGN AND ENGINEERING -->
+            <div class="col-lg-3">
+                <div class="card" onclick="location.href='services.html';" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="face face1">
+                        <div class="content">
+                            <span><i class="de-icon fas fa-cogs"></i></span>
+                            <h3>Design & Engineering</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fuga debitis dolores id
+                                temporibus hic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ==========x======= CARD SECTION END ========x========= -->
+
+
+    <!-- ================= DESCRIPTION SECTION START ================= -->
+
+    <div id="description-section" class="container my-5 js-des-section">
+
+        <!-- First BOX -->
+        <div class="row shadow-box">
+            <div class="col-lg-6 description">
+                <h2>ENERGY & POWER</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis facilis aliquam, totam veniam
+                    cumque deserunt ab laborum ex beatae culpa voluptatibus necessitatibus itaque consectetur possimus a
+                    earum consequatur iure quia assumendas.</p>
+            </div>
+            <div class="col-lg-6 m-0 p-0">
+                <div class="jarallax">
+                    <img class="img-fluid jarallax-img" src="./images/box_img_1.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Secoend BOX -->
+        <div class="row shadow-box">
+            <div class="col-lg-6 m-0 p-0">
+                <div class="jarallax">
+                    <img class="img-fluid jarallax-img" src="./images/box_img_2.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 description">
+                <h2>ENERGY & POWER</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis facilis aliquam, totam veniam
+                    cumque deserunt ab laborum ex beatae culpa voluptatibus necessitatibus itaque consectetur possimus a
+                    earum consequatur iure quia assumendas.</p>
+            </div>
+        </div>
+
+        <!-- Third BOX -->
+        <div class="row shadow-box">
+            <div class="col-lg-6 description">
+                <h2>ENERGY & POWER</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis facilis aliquam, totam veniam
+                    cumque deserunt ab laborum ex beatae culpa voluptatibus necessitatibus itaque consectetur possimus a
+                    earum consequatur iure quia assumendas.</p>
+            </div>
+            <div class="col-lg-6 m-0 p-0">
+                <div class="jarallax">
+                    <img class="img-fluid jarallax-img" src="./images/box_img_3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth BOX -->
+        <div class="row shadow-box">
+            <div class="col-lg-6 m-0 p-0">
+                <div class="jarallax">
+                    <img class="img-fluid jarallax-img" src="./images/box_img_4.jpg">
+                </div>
+            </div>
+            <div class="col-lg-6 description">
+                <h2>ENERGY & POWER</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis facilis aliquam, totam veniam
+                    cumque deserunt ab laborum ex beatae culpa voluptatibus necessitatibus itaque consectetur possimus a
+                    earum consequatur iure quia assumendas.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ==========x======= DESCRIPTION SECTION END ========x========= -->
+
+
+    <!-- ================= SHOWCASE SECTION START ================= -->
+
+    <div id="showcase-section" class="js-carousel-section">
+        <div class="row">
+            <div class="col-lg-10 m-0 p-0">
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-one" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_1.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">1.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-two" data-enlargeable style="cursor: zoom-in" src="./images/box_img_2.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">2.Lorem ipsum dolor sit amet. lorem25s</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-three" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_3.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">3.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-four" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_4.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">4.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-five" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_1.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">5.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-six" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_2.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">6.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="parent">
+                            <div class="child bg-seven" data-enlargeable style="cursor: zoom-in"
+                                src="./images/box_img_3.jpg">
+                                <p class="img-info">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <p class="project-info">7.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 m-0 p-0">
+                <div class="card showcase-bar">
+                    <p>Project Showcase</p>
+                    <a class="mx-auto" href="services"><button type="button" class="showcase-btn">View All</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========x======= SHOWCASE SECTION END ========x========= -->
+
+    <!-- ================= FOOTER SECTION START ================= -->
+    <div id="footer-section">
+        <div class="row container">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3 footer-content">
+                <h6>COMPANY</h6>
+                <a href="">About Us</a>
+                <a href="">Mission & Vission</a>
+                <a href="">Team</a>
+            </div>
+            <div class="col-lg-3 footer-content">
+                <h6>IMPORTENT LINKS</h6>
+                <a href="">Services</a>
+                <a href="">Projects</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="col-lg-3 footer-content">
+                <h6>CONTACT INFO</h6>
+                <p><i class="fas fa-phone-alt"></i>+88&nbsp;01&nbsp;718624208</p>
+                <p><i class="fas fa-envelope"></i>atmotechisf@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>National Scout Bhaban (10th Floor)</p>
+                <p>Inner Circular Road,Kakrail</p>
+                <p>Dhaka-1000,Bangladesh</p>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9 social">
+                <hr class="line">
+                <span>Follow us</span>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9 copyright">
+                <hr class="line">
+                <span> &copy;&nbsp;2020 Bangladesh Engineering & Construction Corporation Ltd. All rights reserved</span>
+                <span>Web Design & Developed by Atmotech IT & Software Firm</span>
+            </div>
+        </div>
+    </div>
+    <!-- ==========x======= FOOTER SECTION END ========x========= -->
+
+
+
+
+
+
+
+
+
+    <!-- JS FILES -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Waypoints for sticky menu -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <!-- aos for animation -->
+    <script src="./js/aos.js"></script>
+    <!-- parallaxe for carousel slider parallax -->
+    <script src="./js/parallaxie.js"></script>
+    <!-- jarallax for image parallax -->
+    <script src="./js/jarallax.min.js"></script>
+    <!-- group carousel -->
+    <script src="./js/flickity.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
