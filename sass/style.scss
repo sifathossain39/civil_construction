@@ -9,6 +9,10 @@ body {
     background: #323233;
 }
 
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 // ================= NAVBAR  START =================
 
 .navbar {
@@ -51,6 +55,11 @@ body {
                 text-transform: capitalize;
                 -webkit-transition: all 0.3s ease-in-out 0s;
                 transition: all 0.3s ease-in-out 0s;
+                color: #d3d3d3 !important;
+            }
+
+            a.active-item {
+                color: #ffffff !important;
             }
 
             // Side bar creating
@@ -418,6 +427,75 @@ body {
 
 // =======X======= DESCRIPTION SECTION  END  ====X=======
 
+// IMAGE ZOOM START =============
+
+.parent {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    .child {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+    }
+
+    .img-info,
+    i {
+        display: none;
+        font-size: 18px;
+        color: #ffffff !important;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 80px;
+    }
+
+    .child:before {
+        content: "";
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(52, 73, 94, 0.75);
+    }
+}
+
+.parent:hover,
+.parent:focus {
+    .child {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .child:before {
+        display: block;
+    }
+
+    .img-info,
+    i {
+        display: block;
+    }
+}
+
+// IMAGE ZOOM END ====X=======
+
 // =============== SHOWCASE-section SECTION  START =============
 
 #showcase-section {
@@ -434,101 +512,6 @@ body {
             overflow: hidden;
             background: #8b8b8b;
 
-            // IMAGE ZOOM
-
-            .parent {
-                width: 100%;
-                height: 350px;
-                overflow: hidden;
-                position: relative;
-                display: inline-block;
-
-                .child {
-                    height: 100%;
-                    width: 100%;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    -webkit-transition: all .5s;
-                    -moz-transition: all .5s;
-                    -o-transition: all .5s;
-                    transition: all .5s;
-                }
-
-                .bg-one {
-                    background-image: url(../images/box_img_1.jpg);
-                }
-
-                .bg-two {
-                    background-image: url(../images/box_img_2.jpg);
-                }
-
-                .bg-three {
-                    background-image: url(../images/box_img_3.jpg);
-                }
-
-                .bg-four {
-                    background-image: url(../images/box_img_4.jpg);
-                }
-
-                .bg-five {
-                    background-image: url(../images/box_img_1.jpg);
-                }
-
-                .bg-six {
-                    background-image: url(../images/box_img_2.jpg);
-                }
-
-                .bg-seven {
-                    background-image: url(../images/box_img_3.jpg);
-                }
-
-                .img-info {
-                    display: none;
-                    font-size: 18px;
-                    color: #ffffff !important;
-                    text-align: center;
-                    margin: auto;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    height: 80px;
-                }
-
-                .child:before {
-                    content: "";
-                    display: none;
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background-color: rgba(52, 73, 94, 0.75);
-                }
-            }
-
-            .parent:hover,
-            .parent:focus {
-                .child {
-                    -ms-transform: scale(1.2);
-                    -moz-transform: scale(1.2);
-                    -webkit-transform: scale(1.2);
-                    -o-transform: scale(1.2);
-                    transform: scale(1.2);
-                }
-
-                .child:before {
-                    display: block;
-                }
-
-                .img-info {
-                    display: block;
-                }
-            }
-
-            // IMAGE ZOOM END
-
             // BOTTOM IMAGE DISCTIPTION
             .project-info {
                 margin-top: 5px;
@@ -542,6 +525,35 @@ body {
 
         .flickity-page-dots {
             display: none;
+        }
+
+        // backgrouond image
+        .bg-one {
+            background-image: url(../images/box_img_1.jpg);
+        }
+
+        .bg-two {
+            background-image: url(../images/box_img_2.jpg);
+        }
+
+        .bg-three {
+            background-image: url(../images/box_img_3.jpg);
+        }
+
+        .bg-four {
+            background-image: url(../images/box_img_4.jpg);
+        }
+
+        .bg-five {
+            background-image: url(../images/box_img_1.jpg);
+        }
+
+        .bg-six {
+            background-image: url(../images/box_img_2.jpg);
+        }
+
+        .bg-seven {
+            background-image: url(../images/box_img_3.jpg);
         }
 
     }
@@ -614,7 +626,153 @@ body {
         }
     }
 }
+
 // =======X======= TITLE SECTION END  ====X=======
+
+// =============== SERVICE DISPLAY SECTION START =============
+
+#serv-display-section,
+#pro-display-section {
+    .parent {
+        height: 300px !important;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .serv-bg-one {
+            background-image: url(../images/slider_img_1.jpg);
+        }
+
+        .serv-bg-two {
+            background-image: url(../images/slider_img_2.jpg);
+        }
+
+        .pro-bg-one {
+            background-image: url(../images/box_img_1.jpg);
+        }
+
+        .pro-bg-two {
+            background-image: url(../images/box_img_2.jpg);
+        }
+
+        .proshow-bg-one {
+            background-image: url(../images/box_img_3.jpg);
+        }
+
+        i {
+            font-size: 24px;
+            color: cyan !important;
+            height: 0px !important;
+        }
+    }
+
+    P {
+        color: #ffffff;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+// =======X======= SERVICE DISPLAY SECTION END  ====X=======
+
+// =============== SERVICE VIEW SECTION START =============
+
+#serv-view-section {
+    padding: 0 150px;
+
+    .parent {
+        height: 450px !important;
+        border-radius: 5px;
+
+        .view-bg-one {
+            background-image: url(../images/slider_img_1.jpg);
+        }
+
+        .view-bg-two {
+            background-image: url(../images/slider_img_2.jpg);
+        }
+
+        i {
+            font-size: 24px;
+            color: cyan !important;
+            height: 0px !important;
+        }
+    }
+
+    P {
+        color: #ffffff;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .discription {
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 20px;
+    }
+}
+
+// =======X======= SERVICE VIEW SECTION END  ====X=======
+
+// =============== PROJECT SHOW SECTION SECTION START =============
+
+#project-show-section {
+
+    .parent {
+        height: 450px !important;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .proshow-bg-one {
+            background-image: url(../images/box_img_1.jpg);
+        }
+
+        .proshow-bg-two {
+            background-image: url(../images/box_img_2.jpg);
+        }
+        .proshow-bg-three {
+            background-image: url(../images/box_img_3.jpg);
+        }
+
+        .proshow-bg-four {
+            background-image: url(../images/box_img_4.jpg);
+        }
+        .proshow-bg-five {
+            background-image: url(../images/box_img_1.jpg);
+        }
+
+        i {
+            font-size: 24px;
+            color: #bbff3d !important;
+            height: 0px !important;
+        }
+    }
+
+    P {
+        color: #ffffff;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .discription {
+        font-size: 15px;
+        font-weight: 100;
+        line-height: 20px;
+    }
+}
+
+// =======X======= PROJECT SHOW SECTION END  ====X=======
+
+
+
 
 // Footer SECTION START  START =============
 
@@ -649,9 +807,6 @@ body {
     }
 
     .social {
-        hr {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
 
         span {
             color: #ffffff;
@@ -697,9 +852,6 @@ body {
     }
 
     .copyright {
-        hr {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
 
         span {
             color: #ffffff;
