@@ -7,6 +7,7 @@
 body {
     // background: #e4e2e2;
     background: #323233;
+    overflow-x: hidden !important;
 }
 
 hr {
@@ -632,7 +633,8 @@ hr {
 // =============== SERVICE DISPLAY SECTION START =============
 
 #serv-display-section,
-#pro-display-section {
+#pro-display-section,
+#company-display-section {
     .parent {
         height: 300px !important;
         border-radius: 5px;
@@ -652,6 +654,19 @@ hr {
 
         .pro-bg-two {
             background-image: url(../images/box_img_2.jpg);
+        }
+
+        .company-bg-one{
+            background-image: url(../images/box_img_1.jpg);
+        }
+        .company-bg-two{
+            background-image: url(../images/box_img_2.jpg);
+        }
+        .company-bg-three{
+            background-image: url(../images/box_img_3.jpg);
+        }
+        .company-bg-four{
+            background-image: url(../images/box_img_4.jpg);
         }
 
         .proshow-bg-one {
@@ -735,6 +750,7 @@ hr {
         .proshow-bg-two {
             background-image: url(../images/box_img_2.jpg);
         }
+
         .proshow-bg-three {
             background-image: url(../images/box_img_3.jpg);
         }
@@ -742,6 +758,7 @@ hr {
         .proshow-bg-four {
             background-image: url(../images/box_img_4.jpg);
         }
+
         .proshow-bg-five {
             background-image: url(../images/box_img_1.jpg);
         }
@@ -756,26 +773,166 @@ hr {
     P {
         color: #ffffff;
         text-align: center;
-        padding: 25px 0;
-        font-size: 32px;
-        font-weight: 600;
+        padding: 10px 0 25px;
+        font-size: 16px;
         margin: 0;
-    }
-
-    .discription {
-        font-size: 15px;
-        font-weight: 100;
-        line-height: 20px;
+        text-transform: uppercase;
     }
 }
 
 // =======X======= PROJECT SHOW SECTION END  ====X=======
 
 
+// =============== PROJECT DETAILS SECTION START ====================
+
+#project-details-section {
+
+    .btn:focus,
+    .btn:active,
+    button:focus,
+    button:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .img-thumbnail{
+        border: none;
+        background-color: #FFA500;
+    }
+    .modal-content{
+        background: #131313;
+    }
+
+    #image-gallery .modal-footer {
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .thumb {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+// =======X======== PROJECT DETAILS SECTION END ========X===========
+
+// ================ ABOUT SECTION START  START =============
+
+#company-sub-section{
+    color: #ffffff;
+    h2{
+        font-weight: 600;
+    }
+    h6{
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    p{
+        line-height: 26px;
+        font-size: 15px;
+    }
+    ul{
+        margin: 16px 0 0 32px;
+        p{
+            line-height: 24px;
+        }
+    }
+    .client-logo{
+        img{
+            height: 200px;
+            width: 100%;
+        }
+    }
+}
+
+// =======X======== ABOUT SECTION END ========X===========
+
+// ============ CONTACT-US SECTION START ==============
+
+#contactUs-section{
+    background-color: #7cb342;
+    color: #ffffff;
+    padding-bottom: 28px;
+    h2{
+        margin: 32px auto;
+        padding-top: 16px;
+        font-weight: 600;
+    }
+    h5,p{
+        text-align: center;
+        margin: 0;
+    }
+    h5{
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    .icon{
+        background-color: rgba(0, 0, 0, 0.47);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin: auto;
+        position: relative;
+        i{
+            position: absolute;
+            font-size: 28px;
+        }
+        .map{
+            top: 22%;
+            left: 30%;
+        }
+        .phn{
+            top:21%;
+            left:25%;
+        }
+        .mail{
+            top:24%;
+            left:24%;
+        }
+    }
+}
+
+// =======X===== CONTACT-US SECTION END ======X==========
+
+// ============= MESSAGE US SECTION START  START =============
+
+#getintouch-section{
+    padding: 48px 0;
+    color: #ffffff;
+    h2{
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    input,textarea{
+        width: 100%;
+        padding-left: 5px;
+    }
+    input{
+        height: 50px;
+        margin-bottom: 16px;
+    }
+    input:focus,textarea:focus,button:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .submit-btn{
+        margin-top: 9px;
+        background: #7cc20d;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    .submit-btn:hover{
+        background: #96e912;
+    }
+}
+
+
+// =======X===== MESSAGE US SECTION END ======X==========
+
 
 
 // Footer SECTION START  START =============
-
 #footer-section {
     margin-bottom: 16px;
 
