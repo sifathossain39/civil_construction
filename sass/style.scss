@@ -1,15 +1,21 @@
 // Fonts
 @font-face{
-    font-family: 'lor';
+    font-family: 'lora';
     font-style: normal;
     font-weight: 400;
     src: url(../fonts/Lora-Regular.ttf);
 }
 @font-face{
-    font-family: 'lor';
+    font-family: 'merri';
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/Lora-Regular.ttf);
+    src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face{
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 * {
@@ -22,7 +28,6 @@ body {
     // background: #e4e2e2;
     background: #323233;
     overflow-x: hidden !important;
-    font-family: 'lora', sans-serif;
 }
 
 hr {
@@ -33,6 +38,7 @@ hr {
 
 .navbar {
 
+    font-family: 'lora', sans-serif;
     z-index: 100 !important;
 
     // Logo
@@ -1062,3 +1068,6 @@ hr {
 }
 
 // Carousel caption text animation End  ---------------
+
+// Media query ==========================
+@import "media-query";
