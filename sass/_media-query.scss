@@ -1,8 +1,55 @@
-// 0px to 992px 
-@media screen and (max-width: 992px) and (min-width: 0px){
-    #myCarousel,#title-section {
+// 0px to 991px 
+@media screen and (max-width: 991px) and (min-width: 0px) {
+
+    #sticky-nav,
+    #description-section {
+        display: none;
+    }
+
+    // MOBILE MENU START ===================
+    #mobile-menu {
+        .navbar {
+            .navbar-brand {
+                .logo-img {
+                    height: 70px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+
+    // MOBILE MENU END ======X========X=====
+
+    #myCarousel {
         margin-top: 0px;
     }
 }
+
+// 0px to 767px 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+
+    // #mobile-menu {
+    //     .navbar {
+    //         .navbar-brand {
+    //             .logo-img {
+    //                 height: 60px;
+    //                 margin-left: 20px;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+// 768px to 991px 
+@media screen and (max-width: 991px) and (min-width: 768px) {}
+// 321px to 575px 
+@media screen and (max-width: 575px) and (min-width: 321px) {}
+// 0px to 320px 
+@media screen and (max-width: 320px) and (min-width: 0px) {}
+
 // 992 px to max
-@media only screen and (min-width:992px){}
+@media only screen and (min-width:992px) {
+    #mobile-menu {
+        display: none;
+    }
+}

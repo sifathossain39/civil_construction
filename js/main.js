@@ -1,8 +1,5 @@
 $(document).ready(function () {
-
-
     // STICKY NAV initialization
-
     $("#card-section").waypoint(function (direction) {
 
         if (direction == "down") {
@@ -10,7 +7,9 @@ $(document).ready(function () {
         } else {
             $("nav").removeClass("sticky");
         }
+
     });
+
     $("#menu-section").waypoint(function (direction) {
 
         if (direction == "down") {
