@@ -1,3 +1,17 @@
+// Fonts
+@font-face{
+    font-family: 'lor';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+@font-face{
+    font-family: 'lor';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +22,7 @@ body {
     // background: #e4e2e2;
     background: #323233;
     overflow-x: hidden !important;
+    font-family: 'lora', sans-serif;
 }
 
 hr {
