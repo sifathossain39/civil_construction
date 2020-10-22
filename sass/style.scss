@@ -18,6 +18,25 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
+@font-face{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Commissioner-Regular.ttf);
+}
+@font-face{
+    font-family: 'hind';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Hind-Regular.ttf);
+}
+
+$font-lora: 'lora';
+$font-merri: 'merri';
+$font-roboto: 'roboto';
+$font-commissioner: 'Commissioner';
+$font-hind: 'hind';
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +44,6 @@
 }
 
 body {
-    // background: #e4e2e2;
     background: #323233;
     overflow-x: hidden !important;
 }
@@ -36,121 +54,7 @@ hr {
 
 // ================= NAVBAR  START =================
 
-.navbar {
-
-    font-family: 'lora', sans-serif;
-    z-index: 100 !important;
-
-    // Logo
-    .navbar-brand {
-        .logo-img {
-            height: 70px;
-            margin-left: 100px;
-        }
-    }
-
-    // Nav items ul
-    .navbar-nav {
-
-        // Nav items li
-        .nav-item {
-            padding: 0px 25px;
-            z-index: 100;
-        }
-
-        // Nav Links
-        a {
-            position: relative;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #ffffff !important;
-        }
-
-        // DROPDOWN MENU
-        .dropdown-menu {
-            top: 96%;
-            left: 24px;
-            background: #262626;
-
-            a {
-                text-transform: capitalize;
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
-                color: #d3d3d3 !important;
-            }
-
-            a.active-item {
-                color: #ffffff !important;
-            }
-
-            // Side bar creating
-            a:before {
-                margin: 1px 0;
-                left: 0;
-                background-color: #ffffff;
-                content: "";
-                position: absolute;
-                height: 27px;
-                width: 4px;
-                transform-origin: bottom top;
-                visibility: hidden;
-                -webkit-transform: scaleY(0);
-                transform: scaleY(0);
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s ease-in-out 0s;
-            }
-
-            a:hover:before {
-                visibility: visible;
-                -webkit-transform: scaleY(1);
-                transform: scaleY(1);
-            }
-
-            a:hover {
-                background: #302f2f;
-            }
-        }
-
-        .dropdown:hover>.dropdown-menu {
-            display: block;
-        }
-
-        // DROPDOWN MENU END
-
-        // Nav items bottems bar creating 
-        a:before {
-            background-color: #9dee1c;
-            content: "";
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-        }
-
-        a:hover:before,
-        a:focus:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-
-        // Nav item Active a
-        a.active:before {
-            background-color: #FFA500;
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
-
-    }
-}
+@import "_navbar";
 
 // Sticky Navigation
 .sticky {
@@ -174,6 +78,7 @@ hr {
 
 #myCarousel {
     margin-top: -96px;
+    font-family: 'roboto', sans-serif;
 
     .carousel-item {
         position: relative;
@@ -205,6 +110,7 @@ hr {
             h1 {
                 position: relative;
                 width: fit-content;
+                width: -moz-fit-content;
                 font-size: 75px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
@@ -220,7 +126,7 @@ hr {
                     left: 0;
                     height: 100%;
                     width: 0;
-                    background-color: crimson;
+                    background-color: #FFA500;
                     animation: text_reveal_box 1s ease;
                     animation-delay: 1s;
                 }
@@ -232,12 +138,13 @@ hr {
 
             // Styling Button
             a {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 text-decoration: none;
-                background: #262626;
+                background: #FFA500;
                 padding: 10px 30px;
                 display: inline-block;
-                color: #ffffff;
+                color: #000000;
+                font-weight: 600;
                 margin-top: 32px;
             }
         }
@@ -278,7 +185,6 @@ hr {
                 i {
                     font-size: 75px;
                     margin: 25px 0 0;
-                    // color: #81c784;
                     color: #F7941D;
                 }
 
@@ -294,6 +200,7 @@ hr {
                     font-size: 18px;
                     font-weight: 900;
                     text-transform: uppercase;
+                    font-family: $font-commissioner,sans-serif;
                 }
             }
         }
@@ -309,13 +216,13 @@ hr {
 
             .content {
                 p {
-                    margin: -24px 0 5px;
+                    margin: -20px 0 5px;
                     width: 200px;
                     padding: 0;
                     font-size: 14px;
                     text-align: center;
                     font-weight: bold;
-                    color: #F7941D;
+                    color: #9dee1c;
                 }
 
                 a {
@@ -359,8 +266,6 @@ hr {
 
 // =========X======== CARD SECTIONT  END ==========X=======
 
-
-
 // =============== DESCRIPTION SECTION  START =============
 
 #description-section {
@@ -372,6 +277,7 @@ hr {
             background: #131313;
             color: #ffffff;
             padding-left: 50px;
+            font-family: $font-hind , sans-serif;
 
             h2 {
                 margin-top: 21%;
@@ -407,7 +313,6 @@ hr {
 
     .shadow-box {
         box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.75);
-        ;
         position: relative;
     }
 
@@ -425,7 +330,6 @@ hr {
         -webkit-box-shadow: 0 35px 20px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0 35px 20px rgba(0, 0, 0, 0.75);
         box-shadow: 0 35px 20px rgba(0, 0, 0, 0.75);
-        ;
         -webkit-transform: rotate(-8deg);
         -moz-transform: rotate(-8deg);
         -o-transform: rotate(-8deg);
@@ -529,7 +433,7 @@ hr {
         height: 100%;
 
         .carousel-cell {
-            width: 25%;
+            width: 30%;
             height: 400px;
             overflow: hidden;
             background: #8b8b8b;
@@ -537,7 +441,7 @@ hr {
             // BOTTOM IMAGE DISCTIPTION
             .project-info {
                 margin-top: 5px;
-                font-size: 14px;
+                font-size: 12px;
                 text-align: center;
                 font-weight: 400;
                 color: #ffffff;

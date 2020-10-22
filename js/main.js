@@ -63,7 +63,7 @@ $('.main-carousel').flickity({
     contain: true,
     wrapAround: true,
     autoPlay: 3000,
-    groupCells: 3
+    groupCells: 2
 
 });
 
