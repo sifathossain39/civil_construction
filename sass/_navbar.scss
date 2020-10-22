@@ -1,0 +1,118 @@
+// 992px to max
+@media only screen and (min-width:992px) {
+    .navbar {
+
+        font-family: 'lora', sans-serif;
+        z-index: 100 !important;
+
+        // Logo
+        .navbar-brand {
+            .logo-img {
+                height: 70px;
+                margin-left: 100px;
+            }
+        }
+
+        // Nav items ul
+        .navbar-nav {
+
+            // Nav items li
+            .nav-item {
+                padding: 0px 25px;
+                z-index: 100;
+            }
+
+            // Nav Links
+            a {
+                position: relative;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #ffffff !important;
+            }
+
+            // DROPDOWN MENU
+            .dropdown-menu {
+                top: 96%;
+                left: 24px;
+                background: #262626;
+
+                a {
+                    text-transform: capitalize;
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                    color: #d3d3d3 !important;
+                }
+
+                a.active-item {
+                    color: #ffffff !important;
+                }
+
+                // Side bar creating
+                a:before {
+                    margin: 1px 0;
+                    left: 0;
+                    background-color: #ffffff;
+                    content: "";
+                    position: absolute;
+                    height: 27px;
+                    width: 4px;
+                    transform-origin: bottom top;
+                    visibility: hidden;
+                    -webkit-transform: scaleY(0);
+                    transform: scaleY(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+
+                a:hover:before {
+                    visibility: visible;
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+
+                a:hover {
+                    background: #302f2f;
+                }
+            }
+
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            // DROPDOWN MENU END
+
+            // Nav items bottems bar creating 
+            a:before {
+                background-color: #9dee1c;
+                content: "";
+                height: 4px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            a:hover:before,
+            a:focus:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+
+            // Nav item Active a
+            a.active:before {
+                background-color: #FFA500;
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+
+        }
+    }
+}

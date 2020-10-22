@@ -1,26 +1,63 @@
-// 0px to 991px 
+// 0px to 1199px [LARGE]
+@media screen and (max-width: 1199px) and (min-width: 0px) {
+    #description-section {
+        .row {
+            .description {
+                padding-left: 50px;
+
+                h2 {
+                    padding-top: 32px;
+                    text-align: center;
+                    margin-top: 0%;
+                    font-size: 32px;
+                }
+
+                p {
+                    text-align: center;
+                    padding-top: 23px;
+                    width: 90%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+// 0px to 991px [MEDIUM]
 @media screen and (max-width: 991px) and (min-width: 0px) {
 
-    #sticky-nav,
-    #description-section {
+    // MAIN NAV DIASABLE
+    .mainNav-menu {
         display: none;
     }
 
     // MOBILE MENU START ===================
     #mobile-menu {
         .navbar {
+            font-family: 'lora', sans-serif;
             background-color: #212121 !important;
+            padding-left: 0;
+            padding-right: 0;
 
             .navbar-brand {
+
                 .logo-img {
                     height: 70px;
                     margin-left: 50px;
                 }
             }
 
+            // CHANGE HAMBURGER COLOR
             .navbar-toggler {
                 border-color: #ffffff;
                 background-color: #ffffff;
+                padding: 3px 5px;
+                margin-right: 16px;
+
+                .navbar-toggler-icon {
+                    height: 24px;
+                }
             }
 
             .navbar-toggler:focus,
@@ -34,26 +71,149 @@
 
                 // Nav items li
                 .nav-item {
-                    padding: 15px 25px;
+                    padding: 15px 0px !important;
                     z-index: 100;
                     text-align: center;
+                }
 
-                    .dropdown-menu{
-                        text-align: center;
+                .mm-active {
+                    background: #303030;
+                    color: #ffffff;
+                }
+
+                // Nav Links
+                a {
+                    // position: relative;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #ffffff !important;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                // COLLAPSE ITEMS
+                .main-collapse {
+                    i {
+                        font-size: 20px;
+                    }
+                }
+
+                .sub-collapse {
+                    background-color: #141414;
+
+                    a {
+                        color: #9dee1c !important;
+                        text-transform: capitalize;
                     }
                 }
             }
         }
-    }
 
+        // Sticky Navigation
+        .sticky {
+
+            .logo-img {
+                display: block;
+            }
+
+            .navbar-toggler {
+                margin-right: 15px;
+            }
+        }
+    }
     // MOBILE MENU END ======X========X=====
 
+
+    // SLIDER  START =================
     #myCarousel {
         margin-top: 0px;
+
+        .carousel-item {
+            .carousel-caption {
+                margin-bottom: 270px;
+            }
+        }
     }
+    // SLIDER  END ========X========
+
+
+    // CARD SECTION  START =================
+    #card-section {
+        .card {
+            margin-top: 32px;
+
+            .face {
+                transition: 0s;
+                border-radius: 0;
+                border-radius: 10px;
+            }
+
+            .face1 {
+                transform: translateY(0px);
+                box-shadow: none;
+                box-shadow: 0px 10px 11px 0px rgba(0, 0, 0, 0.75);
+
+                .content {
+
+                    i {
+                        margin: 25px 0 0;
+                    }
+
+                    .card-icon {
+                        margin-left: 48px;
+                    }
+
+                    .de-icon {
+                        margin-left: 48px !important;
+                    }
+
+                    p {
+                        width: 200px;
+                        padding: 0;
+                        font-size: 14px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #9dee1c;
+                    }
+                }
+            }
+
+            .face2 {
+                display: none;
+            }
+        }
+
+        .card:hover {
+            .face1 {
+                border-radius: 0px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                box-shadow: none;
+            }
+
+            .face2 {
+                border-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                box-shadow: none;
+            }
+        }
+    }
+    // CARD SECTION  END ========XX========
+
+    // SHOWCASE-section SECTION  START =================
+    #showcase-section {
+        // SHOWCASE BAR
+        .showcase-bar{
+            height: 150px;
+        }
+    }
+    // SHOWCASE-section SECTION  END =====XX===========
 }
 
-// 0px to 767px 
+
+// 0px to 767px [SMALL]
 @media screen and (max-width: 767px) and (min-width: 0px) {
 
     #mobile-menu {
@@ -66,20 +226,77 @@
             }
         }
     }
+
+    // SLIDER  START =================
+    #myCarousel {
+
+        .carousel-item {
+
+            .carousel-caption {
+                margin-bottom: 240px;
+            }
+        }
+    }
+    // SLIDER  END ========X========
 }
 
-// 768px to 991px 
-@media screen and (max-width: 991px) and (min-width: 768px) {}
 
-// 321px to 575px 
-@media screen and (max-width: 575px) and (min-width: 321px) {}
+// 0px to 575px [EXTRA SMALL]
+@media screen and (max-width: 575px) and (min-width: 0px) {
 
-// 0px to 320px 
-@media screen and (max-width: 320px) and (min-width: 0px) {}
+    //SLIDER  START =================
+    #myCarousel {
+
+        .carousel-item {
+
+            .carousel-caption {
+                margin-bottom: 200px;
+            }
+        }
+    }
+    // SLIDER  END ========X========
+
+    // FOOTER SECTION START ==========
+    #footer-section{
+        .footer-content{
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .social{
+            text-align: center;
+        }
+    }
+    // FOOTER SECTION END ======X====X====
+}
+
+// 0px to 325px 
+@media screen and (max-width: 325px) and (min-width: 0px) {
+    
+    // FOOTER SECTION START ==========
+    #footer-section{
+        .social{
+            span{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    // FOOTER SECTION END ======X====X====
+}
+
 
 // 992 px to max
 @media only screen and (min-width:992px) {
     #mobile-menu {
         display: none;
+    }
+    #card-section {
+        .card {
+            .face1 {
+                .pera {
+                    display: none;
+                }
+            }
+        }
     }
 }
