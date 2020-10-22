@@ -53,7 +53,6 @@ hr {
 }
 
 // ================= NAVBAR  START =================
-
 @import "_navbar";
 
 // Sticky Navigation
@@ -71,11 +70,9 @@ hr {
         display: none;
     }
 }
-
 // ========X========= NAVBAR  END ===========X======
 
 // ================= SLIDER  START =================
-
 #myCarousel {
     margin-top: -96px;
     font-family: 'roboto', sans-serif;
@@ -150,11 +147,10 @@ hr {
         }
     }
 }
-
 // =========X======== SLIDER  END ==========X=======
 
-// ================= CARD SECTION  START =================
 
+// ================= CARD SECTION  START =================
 #card-section {
 
     .card {
@@ -263,11 +259,10 @@ hr {
         }
     }
 }
-
 // =========X======== CARD SECTIONT  END ==========X=======
 
-// =============== DESCRIPTION SECTION  START =============
 
+// =============== DESCRIPTION SECTION  START =============
 #description-section {
 
     .row {
@@ -348,13 +343,11 @@ hr {
     }
 
 }
-
-
-
 // =======X======= DESCRIPTION SECTION  END  ====X=======
 
-// IMAGE ZOOM START =============
 
+
+// IMAGE ZOOM START =============
 .parent {
     width: 100%;
     height: 350px;
@@ -419,11 +412,9 @@ hr {
         display: block;
     }
 }
-
 // IMAGE ZOOM END ====X=======
 
 // =============== SHOWCASE-section SECTION  START =============
-
 #showcase-section {
 
     margin: 10px 15px 50px 0px;
@@ -527,18 +518,18 @@ hr {
         }
     }
 }
-
 // =======X======= SHOWCASE-section SECTION  END  ====X=======
 
 // =============== TITLE SECTION START =============
 #title-section {
     margin-top: -96px;
+    overflow-y: hidden;
 
     .title-img {
         background: url(../images/title_img_1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center;
         height: 324px;
 
         .title {
@@ -552,11 +543,9 @@ hr {
         }
     }
 }
-
 // =======X======= TITLE SECTION END  ====X=======
 
 // =============== SERVICE DISPLAY SECTION START =============
-
 #serv-display-section,
 #pro-display-section,
 #company-display-section {
@@ -614,11 +603,10 @@ hr {
         margin: 0;
     }
 }
-
 // =======X======= SERVICE DISPLAY SECTION END  ====X=======
 
-// =============== SERVICE VIEW SECTION START =============
 
+// =============== SERVICE VIEW SECTION START =============
 #serv-view-section {
     padding: 0 150px;
 
@@ -656,11 +644,10 @@ hr {
         line-height: 20px;
     }
 }
-
 // =======X======= SERVICE VIEW SECTION END  ====X=======
 
-// =============== PROJECT SHOW SECTION SECTION START =============
 
+// =============== PROJECT SHOW SECTION SECTION START =============
 #project-show-section {
 
     .parent {
@@ -704,12 +691,10 @@ hr {
         text-transform: uppercase;
     }
 }
-
 // =======X======= PROJECT SHOW SECTION END  ====X=======
 
 
 // =============== PROJECT DETAILS SECTION START ====================
-
 #project-details-section {
 
     .btn:focus,
@@ -738,11 +723,10 @@ hr {
         margin-bottom: 15px;
     }
 }
-
 // =======X======== PROJECT DETAILS SECTION END ========X===========
 
-// ================ ABOUT SECTION START  START =============
 
+// ================ ABOUT SECTION START  START =============
 #company-sub-section{
     color: #ffffff;
     h2{
@@ -770,11 +754,10 @@ hr {
         }
     }
 }
-
 // =======X======== ABOUT SECTION END ========X===========
 
-// ============ CONTACT-US SECTION START ==============
 
+// ============ CONTACT-US SECTION START ==============
 #contactUs-section{
     background-color: #7cb342;
     color: #ffffff;
@@ -817,11 +800,10 @@ hr {
         }
     }
 }
-
 // =======X===== CONTACT-US SECTION END ======X==========
 
-// ============= MESSAGE US SECTION START  START =============
 
+// ============= MESSAGE US SECTION START  START =============
 #getintouch-section{
     padding: 48px 0;
     color: #ffffff;
@@ -851,10 +833,7 @@ hr {
         background: #96e912;
     }
 }
-
-
 // =======X===== MESSAGE US SECTION END ======X==========
-
 
 
 // Footer SECTION START  START =============
@@ -943,10 +922,9 @@ hr {
         }
     }
 }
-
-
-
 // Footer SECTION START  END  ====X=======
+
+
 
 
 // ================= Keyframes Start =================
@@ -970,8 +948,9 @@ hr {
         color: #ffffff;
     }
 }
-
 // Carousel caption text animation End  ---------------
+
+
 
 // Media query ==========================
 @import "media-query";

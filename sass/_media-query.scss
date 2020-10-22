@@ -2,7 +2,6 @@
 @media screen and (max-width: 1199px) and (min-width: 0px) {
     #description-section {
         .row {
-
             .description {
                 padding-left: 50px;
 
@@ -24,9 +23,11 @@
     }
 }
 
+
 // 0px to 991px [MEDIUM]
 @media screen and (max-width: 991px) and (min-width: 0px) {
 
+    // MAIN NAV DIASABLE
     .mainNav-menu {
         display: none;
     }
@@ -121,8 +122,8 @@
             }
         }
     }
-
     // MOBILE MENU END ======X========X=====
+
 
     // SLIDER  START =================
     #myCarousel {
@@ -134,8 +135,8 @@
             }
         }
     }
-
     // SLIDER  END ========X========
+
 
     // CARD SECTION  START =================
     #card-section {
@@ -199,7 +200,6 @@
             }
         }
     }
-
     // CARD SECTION  END ========XX========
 
     // SHOWCASE-section SECTION  START =================
@@ -210,8 +210,6 @@
         }
     }
     // SHOWCASE-section SECTION  END =====XX===========
-
-
 }
 
 
@@ -239,9 +237,9 @@
             }
         }
     }
-
     // SLIDER  END ========X========
 }
+
 
 // 0px to 575px [EXTRA SMALL]
 @media screen and (max-width: 575px) and (min-width: 0px) {
@@ -256,7 +254,6 @@
             }
         }
     }
-
     // SLIDER  END ========X========
 
     // FOOTER SECTION START ==========
@@ -287,12 +284,12 @@
     // FOOTER SECTION END ======X====X====
 }
 
+
 // 992 px to max
 @media only screen and (min-width:992px) {
     #mobile-menu {
         display: none;
     }
-
     #card-section {
         .card {
             .face1 {
