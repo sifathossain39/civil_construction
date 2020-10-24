@@ -526,7 +526,6 @@ hr {
 // =============== TITLE SECTION START =============
 #title-section {
     margin-top: -96px;
-    overflow-y: hidden;
 
     .title-img {
         background: url(../images/title_img_1.jpg);
@@ -542,7 +541,11 @@ hr {
             margin: auto;
             padding-top: 96px;
             user-select: none;
+            text-align: center;
 
+        }
+        .project-name{
+            font-size: 38px;
         }
     }
 }
@@ -604,6 +607,14 @@ hr {
         font-size: 22px;
         font-weight: 600;
         margin: 0;
+
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #FFA500;
+        }
     }
 }
 // =======X======= SERVICE DISPLAY SECTION END  ====X=======
@@ -614,6 +625,7 @@ hr {
     padding: 0 150px;
 
     .parent {
+        width: 100%;
         height: 450px !important;
         border-radius: 5px;
 
@@ -709,7 +721,7 @@ hr {
     }
 
     .img-thumbnail{
-        border: none;
+        border: none !important;
         background-color: #FFA500;
     }
     .modal-content{
@@ -739,6 +751,7 @@ hr {
         display: block;
         font-size: 16px;
         font-weight: 600;
+        color: #9dee1c;
     }
     p{
         line-height: 26px;
