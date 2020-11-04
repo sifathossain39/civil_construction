@@ -109,7 +109,7 @@ hr {
                 width: fit-content;
                 width: -moz-fit-content;
                 font-size: 75px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 letter-spacing: 2px;
                 font-weight: 900 !important;
                 color: transparent;
@@ -185,7 +185,10 @@ hr {
                 }
 
                 .de-icon {
-                    margin-left: 57px !important;
+                    margin-left: 32px !important;
+                }
+                .es-icon{
+                    margin-left: 18px !important;
                 }
 
                 h3 {
@@ -941,7 +944,7 @@ hr {
 @keyframes text_reveal {
 
     100% {
-        color: #ffffff;
+        color: #9dee1c;
     }
 }
 // Carousel caption text animation End  ---------------

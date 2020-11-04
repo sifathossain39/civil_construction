@@ -132,6 +132,10 @@
         .carousel-item {
             .carousel-caption {
                 margin-bottom: 270px;
+
+                h1{
+                    font-size: 60px;
+                }
             }
         }
     }
@@ -161,11 +165,14 @@
                     }
 
                     .card-icon {
-                        margin-left: 48px;
+                        margin-left: 60px;
                     }
 
                     .de-icon {
-                        margin-left: 48px !important;
+                        margin-left: 62px !important;
+                    }
+                    .es-icon{
+                        margin-left: 65px !important;
                     }
 
                     p {
@@ -269,6 +276,9 @@
 
             .carousel-caption {
                 margin-bottom: 200px;
+                h1{
+                    font-size: 55px;
+                }
             }
         }
     }
