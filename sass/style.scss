@@ -109,7 +109,7 @@ hr {
                 width: fit-content;
                 width: -moz-fit-content;
                 font-size: 75px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 letter-spacing: 2px;
                 font-weight: 900 !important;
                 color: transparent;
@@ -185,7 +185,10 @@ hr {
                 }
 
                 .de-icon {
-                    margin-left: 57px !important;
+                    margin-left: 32px !important;
+                }
+                .es-icon{
+                    margin-left: 18px !important;
                 }
 
                 h3 {
@@ -448,33 +451,33 @@ hr {
         }
 
         // backgrouond image
-        .bg-one {
-            background-image: url(../images/box_img_1.jpg);
-        }
+        // .bg-one {
+        //     background-image: url(../images/box_img_1.jpg);
+        // }
 
-        .bg-two {
-            background-image: url(../images/box_img_2.jpg);
-        }
+        // .bg-two {
+        //     background-image: url(../images/box_img_2.jpg);
+        // }
 
-        .bg-three {
-            background-image: url(../images/box_img_3.jpg);
-        }
+        // .bg-three {
+        //     background-image: url(../images/box_img_3.jpg);
+        // }
 
-        .bg-four {
-            background-image: url(../images/box_img_4.jpg);
-        }
+        // .bg-four {
+        //     background-image: url(../images/box_img_4.jpg);
+        // }
 
-        .bg-five {
-            background-image: url(../images/box_img_1.jpg);
-        }
+        // .bg-five {
+        //     background-image: url(../images/box_img_1.jpg);
+        // }
 
-        .bg-six {
-            background-image: url(../images/box_img_2.jpg);
-        }
+        // .bg-six {
+        //     background-image: url(../images/box_img_2.jpg);
+        // }
 
-        .bg-seven {
-            background-image: url(../images/box_img_3.jpg);
-        }
+        // .bg-seven {
+        //     background-image: url(../images/box_img_3.jpg);
+        // }
 
     }
 
@@ -567,6 +570,9 @@ hr {
         .serv-bg-two {
             background-image: url(../images/slider_img_2.jpg);
         }
+        .serv-bg-three {
+            background-image: url(../images/slider_img_3.jpg);
+        }
 
         .pro-bg-one {
             background-image: url(../images/box_img_1.jpg);
@@ -636,6 +642,9 @@ hr {
         .view-bg-two {
             background-image: url(../images/slider_img_2.jpg);
         }
+        .view-bg-three {
+            background-image: url(../images/slider_img_3.jpg);
+        }
 
         i {
             font-size: 24px;
@@ -657,6 +666,10 @@ hr {
         font-size: 15px;
         font-weight: 100;
         line-height: 20px;
+        span{
+            margin-top: 5px;
+            display: block;
+        }
     }
 }
 // =======X======= SERVICE VIEW SECTION END  ====X=======
@@ -669,26 +682,6 @@ hr {
         height: 450px !important;
         border-radius: 5px;
         cursor: pointer;
-
-        .proshow-bg-one {
-            background-image: url(../images/box_img_1.jpg);
-        }
-
-        .proshow-bg-two {
-            background-image: url(../images/box_img_2.jpg);
-        }
-
-        .proshow-bg-three {
-            background-image: url(../images/box_img_3.jpg);
-        }
-
-        .proshow-bg-four {
-            background-image: url(../images/box_img_4.jpg);
-        }
-
-        .proshow-bg-five {
-            background-image: url(../images/box_img_1.jpg);
-        }
 
         i {
             font-size: 24px;
@@ -767,6 +760,13 @@ hr {
         img{
             height: 200px;
             width: 100%;
+        }
+    }
+    .team-pic{
+        img{
+            margin-left: 18px;
+            height: 230px;
+            width: 220px;
         }
     }
 }
@@ -877,9 +877,8 @@ hr {
             color: #9dee1c;
         }
 
-        p:nth-child(5),
         p:nth-child(6) {
-            margin-left: 19px;
+            margin-left: 24px;
         }
     }
 
@@ -961,7 +960,7 @@ hr {
 @keyframes text_reveal {
 
     100% {
-        color: #ffffff;
+        color: #9dee1c;
     }
 }
 // Carousel caption text animation End  ---------------
