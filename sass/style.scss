@@ -570,6 +570,9 @@ hr {
         .serv-bg-two {
             background-image: url(../images/slider_img_2.jpg);
         }
+        .serv-bg-three {
+            background-image: url(../images/slider_img_3.jpg);
+        }
 
         .pro-bg-one {
             background-image: url(../images/box_img_1.jpg);
@@ -639,6 +642,9 @@ hr {
         .view-bg-two {
             background-image: url(../images/slider_img_2.jpg);
         }
+        .view-bg-three {
+            background-image: url(../images/slider_img_3.jpg);
+        }
 
         i {
             font-size: 24px;
@@ -660,6 +666,10 @@ hr {
         font-size: 15px;
         font-weight: 100;
         line-height: 20px;
+        span{
+            margin-top: 5px;
+            display: block;
+        }
     }
 }
 // =======X======= SERVICE VIEW SECTION END  ====X=======
@@ -750,6 +760,13 @@ hr {
         img{
             height: 200px;
             width: 100%;
+        }
+    }
+    .team-pic{
+        img{
+            margin-left: 18px;
+            height: 230px;
+            width: 220px;
         }
     }
 }
@@ -860,9 +877,8 @@ hr {
             color: #9dee1c;
         }
 
-        p:nth-child(5),
         p:nth-child(6) {
-            margin-left: 19px;
+            margin-left: 24px;
         }
     }
 
